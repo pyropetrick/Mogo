@@ -2,9 +2,10 @@ extends pug/base
 
 block vars
   - var title = "Mogo"
+  - var navLinks = [{link: "#", name: 'About'},{link: "#", name: 'Service'}, {link: "#", name: 'Work'}, {link: "#", name: 'Blog'}, {link: "#", name: 'Contact'}]
 
 block content
-  h1.title Pug page
+  
 
 block scripts 
   script(src = "./js/main.js")
