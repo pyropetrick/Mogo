@@ -42,7 +42,6 @@ input, button, textarea, select {
 }
 
 body {
-  color: #f38281;
   font-family: Raleway, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
@@ -75,6 +74,7 @@ body {
 
 .header {
   width: 100%;
+  padding-top: 40px;
   position: absolute;
   top: 0;
 }
@@ -85,14 +85,66 @@ body {
   display: flex;
 }
 
+.header__logo {
+  width: 98px;
+  height: 25px;
+}
+
 .nav {
   justify-content: center;
   align-items: center;
+  gap: 35px;
   display: flex;
 }
 
-.icon {
+.nav__item {
+  color: #fff;
+  padding: 5px;
+  font-family: Raleway, sans-serif;
+  font-size: .875rem;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+  position: relative;
+}
+
+.nav__item:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+  background-color: #f4bf87;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav__item:hover:after {
+  opacity: 1;
+}
+
+.nav__item:hover {
+  color: #f4bf87;
+}
+
+.nav__item:last-child {
+  gap: 35px;
+  display: flex;
+}
+
+.nav__item:last-child:after {
+  display: none;
+}
+
+.nav__icon {
+  width: 24px;
+  height: 24px;
   fill: #fff;
+  transition: all .3s ease-in-out;
+}
+
+.nav__icon:hover {
+  fill: #f4bf87;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

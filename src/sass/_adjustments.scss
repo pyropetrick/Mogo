@@ -71,7 +71,7 @@ select {
 
 body {
     @include fontStyle($fontRaleway, $fontRegular, 18);
-    color: $colorPrimary;
+    
     @include mediaTablet {
       @include fontSize(16);
     }

@@ -1,3 +1,10 @@
-mixin svg(name)
-    svg
-        use(xlink:href=`./images/icons/sprites.svg#${name}`).icon
+
+mixin nav(object)
+    for i in object 
+        li.nav__item    
+            a(href=i.link).nav__link=i.name
+
+
+mixin svg(name, svgClass)
+    svg(class!=svgClass)
+        use(xlink:href=`./images/icons/sprites.svg#${name}`)

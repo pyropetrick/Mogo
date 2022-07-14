@@ -2,15 +2,57 @@
     width: 100%;
     position: absolute;
     top: 0;
+    padding-top: 40px;
+    
     .container {
         @include flexXY(space-between,center);
+    }
+    
+    &__logo {
+        @include widthHeight(98px, 25px);
     }
 }
 
 .nav {
     @include flexCenter;
+    gap: 35px;
+    
+    &__item {
+        color: #fff;
+        @include fontStyle($fontRaleway, $fontSemiBold, 14);
+        position: relative;
+        padding: 5px;
+        @include transitionAll;
+        &:after {
+            @include pseudo(100%, 2px);
+            background-color: $colorOrange;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            @include transitionAll;
+        }
+        &:hover::after {
+            opacity: 1;
+        }
+        &:hover {
+            color: $colorOrange;
+        }
+        &:last-child {
+            display: flex;
+            gap: 35px;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__icon {
+        @include widthHeight(24px,24px);
+        fill: #fff;
+        @include transitionAll;
+        
+        &:hover {
+            fill: $colorOrange;
+        }
+    }
 }
 
-.icon {
-    fill: white;
-}
