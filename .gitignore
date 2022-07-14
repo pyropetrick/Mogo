@@ -2,3 +2,8 @@ package.json
 package-lock.json
 node_modules
 .parcel-cache
+.editorconfig
+.parcelrc
+.posthtmlrc
+.prettierrc
+.sassrc
