@@ -80,7 +80,7 @@ body {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  width: var(--large-container);
+  width: $container;
 
   @include mediaTablet {
     width: 984px;
@@ -91,8 +91,3 @@ body {
   }
 }
 
-.icon {
-  fill: white;
-  width: 24px;
-  height: 24px;
-}

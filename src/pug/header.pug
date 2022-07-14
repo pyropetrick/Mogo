@@ -1,4 +1,4 @@
-header
+header.header
     .container
         .header__logo 
             img(src="./images/logo/logo.svg", alt="logo").header__logo-img     
@@ -6,7 +6,7 @@ header
             for i in navLinks 
                 li.nav__item 
                     a(href=i.link)=i.name
-            li.nav__item 
+            li.nav__item
                 +svg('basket')
-            li.nav__item   
+            li.nav__item  
                 +svg('glass')

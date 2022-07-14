@@ -1,8 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Open+Sans:wght@600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap";
-:root {
-  --large-container: 1200px;
-}
-
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -59,7 +55,7 @@ body {
 }
 
 .container {
-  width: var(--large-container);
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -77,10 +73,26 @@ body {
   }
 }
 
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .icon {
   fill: #fff;
-  width: 24px;
-  height: 24px;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

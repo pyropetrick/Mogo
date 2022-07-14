@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .container {
+        @include flexXY(space-between,center);
+    }
+}
+
+.nav {
+    @include flexCenter;
+}
+
+.icon {
+    fill: white;
+}
