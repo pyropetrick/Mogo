@@ -14,9 +14,6 @@ body, h1, h2, h3, h4, h5, p, ul, ol, li, figure, figcaption, blockquote, dl, dd 
 
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizespeed;
-  background-color: green;
 }
 
 ul, ol {
@@ -70,6 +67,35 @@ body {
     width: 100%;
     padding: 0 20px;
   }
+}
+
+.slider {
+  justify-content: space-between;
+  display: flex;
+}
+
+.slider__title {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.bold {
+  font-family: Raleway, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.separator {
+  width: 170px;
+  height: 4px;
+  margin: 50px auto 70px;
+}
+
+.separator--white {
+  background-color: #fff;
 }
 
 .header {
@@ -145,6 +171,65 @@ body {
 
 .nav__icon:hover {
   fill: #f4bf87;
+}
+
+.home {
+  height: 100vh;
+  background-color: #0000;
+  background-image: linear-gradient(#edd789e6, #e98283e6), url("home.5e289f8f.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  padding-top: 170px;
+}
+
+.home__subtitle {
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  font-family: Kaushan Script, cursive;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.home__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 11rem;
+}
+
+.home__button {
+  width: 370px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0000;
+  border: 4px solid #fff;
+  margin: 0 auto 100px;
+  padding: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  display: block;
+}
+
+.home__button:hover {
+  color: #e4be8d;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.home__button:active {
+  color: #e4be8d;
+  background-color: #fff;
+  border-color: #e4be8d;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

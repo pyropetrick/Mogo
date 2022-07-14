@@ -5,6 +5,28 @@ block vars
   - var navLinks = [{link: "#", name: 'About'},{link: "#", name: 'Service'}, {link: "#", name: 'Work'}, {link: "#", name: 'Blog'}, {link: "#", name: 'Contact'}]
 
 block content
-
+  section.home 
+    .container 
+      h2.home__subtitle  Creative Template
+      h1.home__title  Welcome to MoGo
+      div(class = 'separator separator--white separator--home') 
+      button(class = 'home__button') learn more
+      div(class = 'slider slider--home') 
+        .slider__bar
+          .slider__bar-empty
+            .slider__stripe-loader
+          .slider__title <span class ='bold'>01</span> intro 
+        .slider__bar
+          .slider__bar-empty
+            .slider__bar-loader
+          .slider__title <span class ='bold'>02</span> work
+        .slider__bar
+          .slider__bar-empty
+            .slider__bar-loader
+          .slider__title <span class ='bold'>03</span> about
+        .slider__bar
+          .slider__bar-empty
+            .slider__bar-loader
+          .slider__title <span class ='bold'>04</span> contacts
 block scripts 
   script(src = "./js/main.js" type="module")

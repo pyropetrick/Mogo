@@ -1,0 +1,17 @@
+.slider {
+    @include flexX(space-between);
+    
+    &__bar {
+
+    }
+
+    &__title {
+        color: #fff;
+        text-transform: uppercase;
+        @include fontStyle($fontRaleway,$fontNormal, 18);
+    }
+}
+
+.bold {
+    @include fontStyle($fontRaleway, $fontBold, 36);
+}

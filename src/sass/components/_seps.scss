@@ -1,0 +1,8 @@
+.separator {
+    @include widthHeight(170px,4px);
+    margin: 50px auto 70px;
+    
+    &--white {
+        background-color: #fff;
+    }
+}
