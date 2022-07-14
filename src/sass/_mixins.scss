@@ -2,6 +2,29 @@
 // 	--large-container: 1200px;
 // }
 
+
+@mixin widthHeight($width, $height) {
+	width: $width;
+	height: $height;
+}
+@mixin maxWidthHeight($width, $height) {
+	max-width: $width;
+	max-height: $height;
+}
+// after or before
+@mixin pseudo($width, $height) {
+	content: '';
+	position: absolute;
+	@include widthHeight($width, $height);
+}
+
+@mixin flex($justCont, $align, $direct) {
+    display: flex;
+    justify-content: $justCont;
+    flex-direction: $direct;
+    align-items: $align;
+}
+
 @mixin flexDir($direction) {
 	display: flex;
 	flex-direction: $direction;
@@ -41,12 +64,7 @@
     text-align: $textCenter;
 }
 
-@mixin flex($justCont, $align, $direct) {
-    display: flex;
-    justify-content: $justCont;
-    flex-direction: $direct;
-    align-items: $align;
-}
+
 
 @mixin fontSize($count) {
     font-size: calc($count / 16) + rem;
