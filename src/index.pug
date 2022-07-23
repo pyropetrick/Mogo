@@ -14,19 +14,19 @@ block content
       div(class = 'slider slider--home') 
         .slider__bar
           .slider__bar-empty
-            .slider__stripe-loader
+            .slider__bar-loader(data-bar = 'barFirst')
           .slider__title <span class ='bold'>01</span> intro 
         .slider__bar
           .slider__bar-empty
-            .slider__bar-loader
+            .slider__bar-loader(data-bar = 'barSecond')
           .slider__title <span class ='bold'>02</span> work
         .slider__bar
           .slider__bar-empty
-            .slider__bar-loader
+            .slider__bar-loader(data-bar = 'barThird')
           .slider__title <span class ='bold'>03</span> about
         .slider__bar
           .slider__bar-empty
-            .slider__bar-loader
+            .slider__bar-loader(data-bar = 'barFour')
           .slider__title <span class ='bold'>04</span> contacts
 block scripts 
   script(src = "./js/main.js" type="module")

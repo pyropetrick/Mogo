@@ -74,6 +74,25 @@ body {
   display: flex;
 }
 
+.slider__bar-empty {
+  width: 100%;
+  height: 4px;
+  background-color: #f9efcf;
+  position: relative;
+}
+
+.slider__bar-empty.active {
+  background-color: #fff;
+}
+
+.slider__bar-loader {
+  width: 0%;
+  height: 4px;
+  cursor: pointer;
+  background-color: #f38281;
+  position: absolute;
+}
+
 .slider__title {
   color: #fff;
   text-transform: uppercase;
