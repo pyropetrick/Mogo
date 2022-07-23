@@ -1,0 +1,6 @@
+.subtitle {
+    @include fontStyle($fontKaushan,$fontRegular,30);
+    text-align: center;
+    color: $colorBlack;
+    margin-bottom: 35px;
+}

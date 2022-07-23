@@ -117,6 +117,34 @@ body {
   background-color: #fff;
 }
 
+.separator--red {
+  background-color: #f38281;
+}
+
+.subtitle {
+  text-align: center;
+  color: #2d3033;
+  margin-bottom: 35px;
+  font-family: Kaushan Script, cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2d3033;
+  font-family: Raleway, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+.desc {
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.3125rem;
+}
+
 .header {
   width: 100%;
   padding-top: 40px;
@@ -249,6 +277,20 @@ body {
   color: #e4be8d;
   background-color: #fff;
   border-color: #e4be8d;
+}
+
+.about {
+  padding: 40px 0 100px;
+}
+
+.about-photos {
+  gap: 0 30px;
+  display: flex;
+}
+
+.about-photos__img {
+  width: 370px;
+  height: 338px;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

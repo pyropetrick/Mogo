@@ -1,0 +1,13 @@
+.about {
+    padding: 40px 0 100px;
+
+    &-photos {
+        display: flex;
+        gap: 0 30px;
+
+        &__img {
+            width: 370px;
+            height: 338px;
+        }
+    }
+}

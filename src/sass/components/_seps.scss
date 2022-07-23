@@ -5,4 +5,7 @@
     &--white {
         background-color: #fff;
     }
+    &--red {
+        background-color: $colorPrimary;
+    }
 }

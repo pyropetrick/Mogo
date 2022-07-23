@@ -7,7 +7,7 @@ block vars
 block content
   section.home 
     .container 
-      h2.home__subtitle  Creative Template
+      p.home__subtitle  Creative Template
       h1.home__title  Welcome to MoGo
       div(class = 'separator separator--white separator--home') 
       button(class = 'home__button') learn more
@@ -28,5 +28,22 @@ block content
           .slider__bar-empty
             .slider__bar-loader(data-bar = 'barFour')
           .slider__title <span class ='bold'>04</span> contacts
+  section.about
+    .container 
+      p.subtitle What we do
+      h4.title story about us
+      div(class = 'separator separator--red separator--about') 
+      p.desc 
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        | Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. 
+        | Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue 
+        | sit fermentum risus feugiat.
+      .about-photos 
+        a(href="#").about-photos__link 
+          img(src="./images/about/superTeamSecondPhoto.png", alt="super-team-photo").about-photos__img
+        a(href="#").about-photos__link 
+          img(src="./images/about/superTeamSecondPhoto.png", alt="super-team-photo").about-photos__img
+        a(href="#").about-photos__link 
+          img(src="./images/about/superTeamThirdPhoto.png", alt="super-team-photo").about-photos__img
 block scripts 
   script(src = "./js/main.js" type="module")
