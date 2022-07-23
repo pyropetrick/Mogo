@@ -6,8 +6,7 @@
         gap: 0 30px;
 
         &__img {
-            width: 370px;
-            height: 338px;
+            @include widthHeight(370px, 338px);
         }
     }
 }

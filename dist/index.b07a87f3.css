@@ -325,4 +325,42 @@ body {
   font-weight: 700;
 }
 
+.work-services {
+  padding: 40px 0 90px;
+}
+
+.work-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 140px 30px;
+  display: flex;
+}
+
+.work-list__item {
+  gap: 30px;
+  display: flex;
+}
+
+.work-list__item-icon {
+  width: 70px;
+  height: 70px;
+  fill: #95e1d3;
+}
+
+.work-list__item-title {
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.work-list__item-desc {
+  color: #2d3033;
+  width: 270px;
+  line-height: 1.3125rem;
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */

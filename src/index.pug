@@ -32,7 +32,7 @@ block content
     .container 
       p.subtitle What we do
       h4.title story about us
-      div(class = 'separator separator--red separator--about') 
+      div(class = 'separator separator--red') 
       p.desc 
         | Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         | Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. 
@@ -62,5 +62,50 @@ block content
       .banner__stats-wrapper
         p.banner__stats-number 24
         p.banner__stats-desc Lorem, ipsum.
+  section.work-services 
+    .container
+      p.subtitle We work with
+      h4.title amazing services
+      div(class = 'separator separator--red')
+      .work-services__list.work-list
+        .work-list__item 
+          a(href="#").work-list__item-link 
+            +svg('mushroom','work-list__item-icon')
+          .work-list__item-inner
+            p.work-list__item-title photography
+            p.work-list__item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .work-list__item 
+          a(href="#").work-list__item-link 
+            +svg('squares','work-list__item-icon')
+          .work-list__item-inner
+            p.work-list__item-title web design
+            p.work-list__item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .work-list__item 
+          a(href="#").work-list__item-link 
+            +svg('sword','work-list__item-icon')
+          .work-list__item-inner
+            p.work-list__item-title creativity
+            p.work-list__item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .work-list__item 
+          a(href="#").work-list__item-link 
+            +svg('paper','work-list__item-icon')
+          .work-list__item-inner
+            p.work-list__item-title seo
+            p.work-list__item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .work-list__item 
+          a(href="#").work-list__item-link 
+            +svg('picture','work-list__item-icon')
+          .work-list__item-inner
+            p.work-list__item-title css/html
+            p.work-list__item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .work-list__item 
+          a(href="#").work-list__item-link 
+            +svg('aim','work-list__item-icon')
+          .work-list__item-inner
+            p.work-list__item-title digital
+            p.work-list__item-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+
 block scripts 
   script(src = "./js/main.js" type="module")
