@@ -1,0 +1,69 @@
+.service {
+    padding: 50px 0 100px;
+
+    &__list {
+        display: flex;
+        gap: 0 30px;
+
+        &-img {
+            @include widthHeight(570px, 483px);
+        }
+    }
+}
+
+.list-dropdown {
+    
+    &__item {
+        border: 1px solid $colorGrey;
+        margin-bottom: 20px;
+        width: 567px;
+        &-head {
+            @include flexXY(space-between,center);
+            
+            gap: 0 40px;
+            padding: 25px 15px;
+            border-bottom: 1px solid $colorGrey;
+        }
+        &-icon {
+            @include widthHeight(42px, 42px);
+            fill: $colorAqua;
+        }
+        &-title {
+            @include fontStyle($fontRaleway,$fontBold,24);
+            color: $colorBlack;
+            text-transform: uppercase;
+        }
+        &-desc {
+            padding: 15px   ;
+            overflow-y: auto;
+            height: 160px;
+            display: none;
+            
+            &.active {
+                display: block;
+            }
+        }
+        &-arrow {
+            width: 15px;
+            height: 15px;
+            border-top: 3px solid $colorGrey;
+            border-right: 3px solid $colorGrey;
+            transform: rotate(135deg);
+            @include transitionAll;
+            
+            &.active {
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                cursor: pointer;
+                border-color: black;
+            }
+            &:active {
+                cursor: pointer;
+                border-color: black;
+            }
+
+        }
+    }
+}

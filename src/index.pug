@@ -112,8 +112,53 @@ block content
       .unique-design__tablet 
         img(src="./images/devices/tablet-picture.png", alt="picture in tablet").unique-design__tablet-picture
         img(src="./images/devices/mobile.png", alt="mobile").unique-design__mobile
-
-
+  section.service 
+    .container 
+      p.subtitle Service
+      h4.title what we do
+      div(class = 'separator separator--red')
+      p.desc 
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        | Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. 
+        | Dis sapien ipsum enim dui fermentum viverra dolor sit. 
+        | Aliquet congue sit fermentum risus feugiat.
+      .service__list 
+        img(src="./images/service/photographer.png", alt="photographer").service__list-img
+        .service_list-dropdown.list-dropdown
+          .list-dropdown__item
+            .list-dropdown__item-head
+              +svg('face', 'list-dropdown__item-icon')
+              p.list-dropdown__item-title photography
+              span(data-text = '#textFirst').list-dropdown__item-arrow.active
+            .list-dropdown__item-desc.active(id = 'textFirst')
+              p.list-dropdown__item-text 
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, 
+                | id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. 
+                | Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. 
+                | Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+          .list-dropdown__item
+            .list-dropdown__item-head
+              +svg('target', 'list-dropdown__item-icon')
+              p.list-dropdown__item-title creativity
+              span(data-text = '#textSecond').list-dropdown__item-arrow
+            .list-dropdown__item-desc(id = 'textSecond')
+              p.list-dropdown__item-text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, 
+                | id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. 
+                | Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. 
+                | Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+          .list-dropdown__item
+            .list-dropdown__item-head
+              +svg('gear', 'list-dropdown__item-icon')
+              p.list-dropdown__item-title web design
+              span(data-text = '#textThird').list-dropdown__item-arrow
+            .list-dropdown__item-desc(id = 'textThird')
+              p.list-dropdown__item-text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, 
+                | id tincidunt tellus rhoncus ornare. Amet, et elementum enim mattis. 
+                | Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. 
+                | Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+          
 
 block scripts 
   script(src = "./js/main.js" type="module")
