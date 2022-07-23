@@ -1,0 +1,31 @@
+.work-services {
+    padding: 40px 0 90px;
+
+}
+
+.work-list {
+    @include flexCenter;
+    flex-wrap: wrap;
+    gap: 140px 30px;
+
+    &__item {
+        display: flex;
+        gap: 30px;
+        &-icon {
+            @include widthHeight(70px,70px);
+            fill: $colorAqua;
+        }
+
+        &-title {
+            @include fontStyle($fontRaleway,$fontBold,24);
+            color: $colorBlack;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        &-desc {
+            color: $colorBlack;
+            @include LineHeight(21);
+            width: 270px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.banner {
+    background-color: $colorAqua;
+    
+    .container {
+        display: flex;
+    }
+
+    &__stats {
+        &-wrapper {
+            border: 1px solid #fff;
+            border-top: none;
+            border-bottom: none;
+            padding: 55px 35px;
+        }
+        &-number {
+            @include fontStyle($fontRaleway, $fontBold, 64);
+            color: #fff;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &-desc {
+            @include fontStyle($fontRaleway, $fontBold, 24);
+            color: #fff;
+            text-align: center;
+        }
+    }
+}

@@ -74,6 +74,25 @@ body {
   display: flex;
 }
 
+.slider__bar-empty {
+  width: 100%;
+  height: 4px;
+  background-color: #f9efcf;
+  position: relative;
+}
+
+.slider__bar-empty.active {
+  background-color: #fff;
+}
+
+.slider__bar-loader {
+  width: 0%;
+  height: 4px;
+  cursor: pointer;
+  background-color: #f38281;
+  position: absolute;
+}
+
 .slider__title {
   color: #fff;
   text-transform: uppercase;
@@ -96,6 +115,34 @@ body {
 
 .separator--white {
   background-color: #fff;
+}
+
+.separator--red {
+  background-color: #f38281;
+}
+
+.subtitle {
+  text-align: center;
+  color: #2d3033;
+  margin-bottom: 35px;
+  font-family: Kaushan Script, cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2d3033;
+  font-family: Raleway, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+
+.desc {
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.3125rem;
 }
 
 .header {
@@ -230,6 +277,194 @@ body {
   color: #e4be8d;
   background-color: #fff;
   border-color: #e4be8d;
+}
+
+.about {
+  padding: 40px 0 100px;
+}
+
+.about-photos {
+  gap: 0 30px;
+  display: flex;
+}
+
+.about-photos__img {
+  width: 370px;
+  height: 338px;
+}
+
+.service {
+  padding: 50px 0 100px;
+}
+
+.service__list {
+  gap: 0 30px;
+  display: flex;
+}
+
+.service__list-img {
+  width: 570px;
+  height: 483px;
+}
+
+.list-dropdown__item {
+  width: 567px;
+  border: 1px solid #c6cbcd;
+  margin-bottom: 20px;
+}
+
+.list-dropdown__item-head {
+  border-bottom: 1px solid #c6cbcd;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 40px;
+  padding: 25px 15px;
+  display: flex;
+}
+
+.list-dropdown__item-icon {
+  width: 42px;
+  height: 42px;
+  fill: #95e1d3;
+}
+
+.list-dropdown__item-title {
+  color: #2d3033;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.list-dropdown__item-desc {
+  height: 160px;
+  padding: 15px;
+  display: none;
+  overflow-y: auto;
+}
+
+.list-dropdown__item-desc.active {
+  display: block;
+}
+
+.list-dropdown__item-arrow {
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #c6cbcd;
+  border-right: 3px solid #c6cbcd;
+  transition: all .3s ease-in-out;
+  transform: rotate(135deg);
+}
+
+.list-dropdown__item-arrow.active {
+  transform: rotate(-45deg);
+}
+
+.list-dropdown__item-arrow:hover, .list-dropdown__item-arrow:active {
+  cursor: pointer;
+  border-color: #000;
+}
+
+.banner {
+  background-color: #95e1d3;
+}
+
+.banner .container {
+  display: flex;
+}
+
+.banner__stats-wrapper {
+  border: none;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 55px 35px;
+}
+
+.banner__stats-number {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: Raleway, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.banner__stats-desc {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.unique-design {
+  background-color: #0000;
+  background-image: linear-gradient(#fffc, #fffc), url("devices.bcc31c7a.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  padding: 40px 0 55px;
+}
+
+.unique-design__tablet {
+  width: 708px;
+  border: 25px solid #2d3033;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.unique-design__tablet-picture {
+  border-radius: 30px;
+}
+
+.unique-design__mobile {
+  width: 200px;
+  height: 411px;
+  position: absolute;
+  top: 40%;
+  left: 90%;
+}
+
+.work-services {
+  padding: 40px 0 90px;
+}
+
+.work-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 140px 30px;
+  display: flex;
+}
+
+.work-list__item {
+  gap: 30px;
+  display: flex;
+}
+
+.work-list__item-icon {
+  width: 70px;
+  height: 70px;
+  fill: #95e1d3;
+}
+
+.work-list__item-title {
+  color: #2d3033;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.work-list__item-desc {
+  color: #2d3033;
+  width: 270px;
+  line-height: 1.3125rem;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

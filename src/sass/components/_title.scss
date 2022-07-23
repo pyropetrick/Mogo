@@ -1,0 +1,5 @@
+.title {
+    @include fontStyle($fontRaleway,$fontBlack,36);
+    @include textUpCenter(uppercase, center);
+    color: $colorBlack;
+}

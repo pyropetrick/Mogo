@@ -17,26 +17,38 @@
 @import './components/input';
 @import './components/subtitle';
 @import './components/price';
+@import './components/title';
+@import './components/desc';
 
 // Blocks
 
-// header
+
 @import './blocks/header';
 
-// home
 @import './blocks/home';
 
-// products
-@import './blocks/shop';
+@import './blocks/about';
 
-// banner
+@import './blocks/service';
+
 @import './blocks/banner';
 
-// blog
+@import './blocks/unique-design';
+
+@import './blocks/shop';
+
+@import './blocks/clients';
+
+@import './blocks/partners';
+
+@import './blocks/gallery';
+
+@import './blocks/team';
+
+@import './blocks/work-services';
+
 @import './blocks/blog';
 
-// contact
 @import './blocks/contact';
 
-// footer
 @import './blocks/footer';

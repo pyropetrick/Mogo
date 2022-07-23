@@ -1,0 +1,12 @@
+.about {
+    padding: 40px 0 100px;
+
+    &-photos {
+        display: flex;
+        gap: 0 30px;
+
+        &__img {
+            @include widthHeight(370px, 338px);
+        }
+    }
+}

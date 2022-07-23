@@ -2,7 +2,21 @@
     @include flexX(space-between);
     
     &__bar {
-
+        &-empty {
+            background-color: #F9EFCF;
+            @include widthHeight(100%, 4px);
+            position: relative;
+            &.active {
+                background-color: #fff;
+            }
+        }
+        &-loader {
+            background-color: $colorPrimary;
+            @include widthHeight(0%, 4px);
+            position: absolute;
+            cursor: pointer;
+        
+        }
     }
 
     &__title {
