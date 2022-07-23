@@ -15,6 +15,7 @@
             @include widthHeight(70px,70px);
             fill: $colorAqua;
         }
+
         &-title {
             @include fontStyle($fontRaleway,$fontBold,24);
             color: $colorBlack;

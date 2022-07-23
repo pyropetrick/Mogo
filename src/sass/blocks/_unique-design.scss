@@ -1,0 +1,23 @@
+.unique-design {
+    padding: 40px 0 55px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)), url(../images/background/devices.jpg) center no-repeat;
+    background-size: cover;
+
+    &__tablet {
+        border: 25px solid $colorBlack;
+        border-radius: 30px;
+        width: 708px;
+        margin: $marginCenter;
+        position: relative;
+        &-picture {
+            border-radius: 30px;
+        }
+        
+    }
+    &__mobile {
+        position: absolute;
+        top: 40%;
+        left: 90%;
+        @include widthHeight(200px, 411px);
+    }
+}

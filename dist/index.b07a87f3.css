@@ -325,6 +325,38 @@ body {
   font-weight: 700;
 }
 
+.unique-design {
+  background-color: #0000;
+  background-image: linear-gradient(#fffc, #fffc), url("devices.bcc31c7a.jpg");
+  background-position: 0 0, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  padding: 40px 0 55px;
+}
+
+.unique-design__tablet {
+  width: 708px;
+  border: 25px solid #2d3033;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.unique-design__tablet-picture {
+  border-radius: 30px;
+}
+
+.unique-design__mobile {
+  width: 200px;
+  height: 411px;
+  position: absolute;
+  top: 40%;
+  left: 90%;
+}
+
 .work-services {
   padding: 40px 0 90px;
 }
